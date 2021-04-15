@@ -1,0 +1,47 @@
+header {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+header .menu-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .menu-logo .logo {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+header .menu-logo ul.menu {
+  display: flex;
+  list-style: none;
+}
+header .menu-logo ul.menu li {
+}
+header .menu-logo ul.menu li a {
+    text-decoration: none;
+}
+
+header .searchBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header .searchBox input {
+}
+header .searchBox button {
+}
+
+header nav {
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+}
+header nav ul li a {
+    text-decoration: none;
+}
