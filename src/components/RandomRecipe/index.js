@@ -14,11 +14,11 @@ export default class Index extends Component {
             urlRecipe : 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=',
         }
     };
-
+    // urlRecipe => stock url api => after we are going to concact with recipe's ID at the end 
     getRandomRecipe = async () => {
 
         try {
-            const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
+            const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php'); //<= this URL generate a random recipe
 
             const element = response.data.meals;
 
