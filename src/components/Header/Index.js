@@ -91,12 +91,6 @@ export default class Index extends Component {
     render() {
 
 
-        let card = this.state.data.map((recette, index) => {
-            return (
-                <Card data="recette" index="index" />
-            )
-        })
-
         return (
             <header>
                 <div className="menu-logo">
