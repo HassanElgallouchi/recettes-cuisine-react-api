@@ -8,7 +8,7 @@ function App() {
  
   return (
     <Router>
-      <Route path="/favorite" component={Favorite}/>
+     <Route path="/favorite" component={Favorite}/> 
     </Router>
   );
 }
