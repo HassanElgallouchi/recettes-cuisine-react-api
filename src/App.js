@@ -10,7 +10,7 @@ function App() {
   return (
 
     <Router>
-      
+
       <Route exact path="/" component={recipeCategories} />
       <Route exact path="/favorite" component={Favorite} />
 
