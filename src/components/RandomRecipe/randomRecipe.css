@@ -1,0 +1,10 @@
+.randomRecipe{
+    border: 2px solid red;
+    height: 800px;
+    
+}
+.randomRecipe img {
+    border: 3px solid blue;
+    height: 500px;
+    width: 50%;
+}
