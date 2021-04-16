@@ -1,23 +1,24 @@
+import axios from 'axios'
 import React, { Component } from 'react'
-import './RandomRecipe.css'
-import axios from 'axios';
+import './randomRecipe.css';
 
-export default class RandomRecipe extends Component {
+
+export default class Index extends Component {
    
-    constructor() {
+    constructor(props) {
    
-        super();
+        super(props);
 
         this.state = {
             data: [],
             urlRecipe : 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=',
         }
     };
-
+    // urlRecipe => stock url api => after we are going to concact with recipe's ID at the end 
     getRandomRecipe = async () => {
 
         try {
-            const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
+            const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php'); //<= this URL generate a random recipe
 
             const element = response.data.meals;
 
@@ -43,7 +44,7 @@ export default class RandomRecipe extends Component {
             <div>
                 {this.state.data.map(e => {
                     return (
-                    <div>
+                    <div className='randomRecipe'>
                         <h1 key={e.strMeal}>{e.strMeal}</h1>
                         <img src={e.strMealThumb} alt={e.strMeal}/>
                         <p>{e.strInstructions}</p>
