@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Footer.css'
 import instagram from '../../assets/img/instagram.png';
 import facebook from '../../assets/img/facebook.png'; 
 import twitter from '../../assets/img/twitter.png';
@@ -51,7 +52,7 @@ export default class Index extends Component {
                   <a href='#'><img src={instagram} style={this.state.logoHeight} alt="logo d'instagram"/></a>
                   <a href='#'><img src={facebook} alt="logo de facebook"/></a>
                   <a href='#'><img src={twitter} alt="logo de twitter"/></a>
-                  {/* <a href='#'><img src={youtube} style={this.state.logoHeight} alt="logo de youtube"/></a> */}
+                  <a href='#'><img src={youtube} style={this.state.logoHeight} alt="logo de youtube"/></a>
                  </div> 
                 </div>
 
