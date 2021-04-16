@@ -90,7 +90,6 @@ export default class Index extends Component {
 
     render() {
 
-
         return (
             <header>
                 <div className="menu-logo">
