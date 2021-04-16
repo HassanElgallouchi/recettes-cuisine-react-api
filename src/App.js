@@ -11,8 +11,8 @@ function App() {
 
     <Router>
       
-      <Route exact path="/" component={Homepage} />
-      <Route exact path="/favorite" component={Favorite} />
+      {/* <Route exact path="/" component={Homepage} /> */}
+      {/* <Route exact path="/favorite" component={Favorite} /> */}
 
     </Router>
   );

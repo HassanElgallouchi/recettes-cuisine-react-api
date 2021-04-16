@@ -49,7 +49,7 @@ export default class Index extends Component {
         }
     };
     //calling data retreival()
-    componentDidMount() {//(?)
+    componentDidMount() {
         this.getCategories()
     }
     
