@@ -1,50 +1,90 @@
-.unorderedList ul{
-    list-style-type: none;
-    border: 1px solid rgb(56, 51, 61);
+
+body {
+  background-color: #efefef;
 }
 
-.orderedList ol{
-    border: 1px solid blueviolet;
-    list-style: none;
+.categorie-recipe {
+    width: 80%;
+    margin: 0 auto;
+}
+.detailTitle {
+}
+.detailTitle h1 {
+}
+.recette {
+  padding: 1rem;
+}
+.titre-recette {
+}
+.titre-recette a {
+}
+.titre-recette a h2 {
+  color: #555;
+  font-size: 1.7rem;
+  padding-left: 1rem;
+}
+.details-recette {
+  color: #444;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.orderedList h3{
-    border: 1px solid rgb(187, 35, 55);
+.ingredient-recette {
+  background-color: #fff;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
 }
-
-.unorderedList h3{
-    border: 1px solid rgb(187, 121, 35);
+.ingredient-recette ul {
+  list-style: none;
 }
-
-
-.detailsRecpImage{
-    height: 505px;
-    border: 2px solid rgb(29, 27, 121);
+.ingredient-recette ul h3 {
+    color: #333;
 }
-.detailTitle>h1{
-    border: 2px solid rgba(255, 187, 0, 0.568);
-    width: 147px;
+.ingredient-recette ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #ddd;
 }
-.rcpTitle a>h2{
-    border: 2px solid rgba(255, 7, 172, 0.568);
-    width: 267px;
+.ingredient-recette ul li span {
+  width: 50%;
+  display: inline-block;
 }
-.instruction>p{
-    border: 2px solid rgba(22, 83, 65, 0.568);
-    width: 757px;
+.ingredient-recette button {
+  text-align: center;
+  border: none;
+  background-color: #b198fc;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.3rem;
+  align-self: center;
+  margin-bottom: 1rem;
 }
-.instruction>h1{
-    border: 2px solid rgba(70, 124, 108, 0.568);
-    width: 189px;
-
+.image-recette {
+  width: 55%;
 }
-.flex{
-    display: flex;
-    justify-content: flex-start;
+.image-recette .image {
+background-color: #fff;
+padding: 1rem;
 }
-
-.spaceBetween{
-    display: flex;
-    justify-content: space-between;
+.image-recette .image img {
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid #ddd;
 }
-
+.instruction {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+.instruction h1 {
+  border-bottom: 2px solid #b198fc;
+  color: #333;
+}
+.instruction p {
+    font-size: 1.3rem;
+    color: #444;
+    line-height: 1.5rem;
+}
