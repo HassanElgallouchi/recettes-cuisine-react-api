@@ -20,7 +20,8 @@ export default class Index extends Component {
                 border: '1px solid #E117FB',
                 display: 'flex',
                 justifyContent: 'space-between',
-                backgroundColor: '#FCFE9F'
+                backgroundColor: '#FCFE9F',
+                marginTop: '128px',
 
             },     
             imgStyle : {
@@ -45,7 +46,7 @@ export default class Index extends Component {
                 <div style={this.state.imgStyle}>  
 
                 <div style={this.state.space}> 
-                  <p>Food Recp</p>
+                  <p>Foodies</p>
                 </div>
 
                 <div style={this.state.space}>
@@ -57,7 +58,7 @@ export default class Index extends Component {
                 </div>
 
                 <p>
-                    Tous droits réservées FoodLover.org 2020-2021
+                    Tous droits réservés Foodies.org 2020-2021
                 </p>
                
                 
