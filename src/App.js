@@ -6,6 +6,7 @@ import Homepage from "./views/Homepage/";
 import AreaCategorie from './views/Categories/AreaCategorie';
 import Header from './components/Header/index';
 import Footer from './components/Footer/index'
+import Recipe from './views/Recipe'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Header/>
 
       <Route exact path="/" component={Homepage} />
+      <Route exact path="/recette/:id" component={Recipe}/>
       <Route exact path="/categories/:area" component={AreaCategorie}/>
       <Route exact path="/favorite" component={Favorite} />
       
