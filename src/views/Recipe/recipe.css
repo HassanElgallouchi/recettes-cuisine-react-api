@@ -1,0 +1,50 @@
+.unorderedList ul{
+    list-style-type: none;
+    border: 1px solid rgb(56, 51, 61);
+}
+
+.orderedList ol{
+    border: 1px solid blueviolet;
+    list-style: none;
+}
+
+.orderedList h3{
+    border: 1px solid rgb(187, 35, 55);
+}
+
+.unorderedList h3{
+    border: 1px solid rgb(187, 121, 35);
+}
+
+
+.detailsRecpImage{
+    height: 505px;
+    border: 2px solid rgb(29, 27, 121);
+}
+.detailTitle>h1{
+    border: 2px solid rgba(255, 187, 0, 0.568);
+    width: 147px;
+}
+.rcpTitle a>h2{
+    border: 2px solid rgba(255, 7, 172, 0.568);
+    width: 267px;
+}
+.instruction>p{
+    border: 2px solid rgba(22, 83, 65, 0.568);
+    width: 757px;
+}
+.instruction>h1{
+    border: 2px solid rgba(70, 124, 108, 0.568);
+    width: 189px;
+
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+

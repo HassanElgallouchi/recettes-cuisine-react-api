@@ -17,8 +17,11 @@ export default class Index extends Component {
         this.state = {
             data: [],
             firstData: {},
-            secondData: {},
-            
+            secondData: {},  
+            style: {
+               opacity: '0'
+            },
+        
         }
 
         // console.log(this.props);
@@ -36,7 +39,6 @@ export default class Index extends Component {
             const firstEl = response.data.categories[0];
             const secondEl = response.data.categories[1];
            
-
             /*Passing data to object element*/          
             this.setState({
                 data: elements,
@@ -44,29 +46,35 @@ export default class Index extends Component {
                 secondData: secondEl, 
             })
 
-            console.log(this.state.firstData.strCategory);
-
         } catch (error) {
 
             console.error('error:', error);
         }
     };
-    //calling data retreival()
-    componentDidMount() {//(?)
+    
+    componentDidMount() {
         this.getCategories()
     }
-    
+
     render() {
+        
         return (
-            <div class='flex'>                                
-                        <div>
-                            <a href={'/category/'+ this.state.secondData.strCategory}><h4 class='categoriesTitles'>Recipes With {this.state.firstData.strCategory}</h4> </a>                     
-                            <a href={'/category/'+ this.state.firstData.strCategory}><img src={this.state.firstData.strCategoryThumb} class='categoriesPictures' /></a>
+            <div class='flexCategorie'>                                
+                        <div className='cat cat1'>
+                            <a href={'/categorie/'+ this.state.secondData.strCategory}><h4 >Recipes With {this.state.firstData.strCategory}</h4> </a>  
+                            <p>Discover our <span>beef</span> recipes</p>
+                        
+                          <div>                
+                            <a href={'/categorie/'+ this.state.firstData.strCategory}><img src={this.state.firstData.strCategoryThumb} className='categoriesPictures' /></a>
+                          </div>   
                         </div>
 
-                        <div>
-                            <a href={'/category/'+ this.state.secondData.strCategory}><h4 class='categoriesTitles'>Receipes with {this.state.secondData.strCategory}</h4> </a>                     
-                            <a href={'/category/'+ this.state.secondData.strCategory}><img src={this.state.secondData.strCategoryThumb} class='categoriesPictures' /></a>
+                        <div className='cat cat2' >
+                            <a href={'/categorie/'+ this.state.secondData.strCategory}><h4 >Recipes with {this.state.secondData.strCategory}</h4> </a> 
+                            <p>Discover our <span>chicken</span> recipes</p>
+                          <div>                 
+                            <a href={'/categorie/'+ this.state.secondData.strCategory}><img src={this.state.secondData.strCategoryThumb} className='categoriesPictures' /></a>
+                          </div>   
                         </div>                
             </div>
         )

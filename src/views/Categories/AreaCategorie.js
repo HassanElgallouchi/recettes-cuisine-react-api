@@ -12,6 +12,7 @@ export default class AreaCategorie extends Component {
         const  area  = this.props.match.params.area
         const response = await axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?a='+area)
         console.log(response);
+       
 
         this.setState({
             data : response.data.meals

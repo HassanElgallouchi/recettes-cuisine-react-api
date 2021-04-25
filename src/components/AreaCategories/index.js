@@ -41,9 +41,9 @@ export default class index extends Component {
         return (
             <div className="AreasRecipe">
                 <ul>
-                   <li><a href={'/categories/'+this.state.first.strArea}>{this.state.first.strArea}</a></li> 
-                   <li><a href={'/categories/'+this.state.second.strArea}>{this.state.second.strArea}</a></li>
-                   <li><a href={'/categories/'+this.state.third.strArea}>{this.state.third.strArea}</a></li>
+                   <li><a href={'/Origine/filter/a/'+ this.state.first.strArea}>{this.state.first.strArea}</a></li> 
+                   <li><a href={'/Origine/filter/a/'+ this.state.first.strArea}>{this.state.second.strArea}</a></li>
+                   <li><a href={'/Origine/filter/a/'+ this.state.first.strArea}>{this.state.third.strArea}</a></li>
                 </ul>
             </div>
         )
