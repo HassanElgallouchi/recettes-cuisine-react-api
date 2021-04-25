@@ -1,8 +1,14 @@
+
+a{/*ajout de Rebecca*/
+  text-decoration: none;
+  color: black;
+}
 header {
-  background-color: #eee;
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  height: 0px;
 }
 header .menu-logo {
   display: flex;
@@ -28,6 +34,7 @@ header .searchBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 32px;
 }
 header .searchBox input {
 }

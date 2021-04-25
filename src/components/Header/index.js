@@ -1,8 +1,9 @@
 import axios from 'axios';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { withRouter } from "react-router";
 import './header.css';
 
-export default class Index extends Component {
+class Index extends Component {
 
 
     constructor(props) {
@@ -16,10 +17,14 @@ export default class Index extends Component {
             origine: '',
             filterSearch: 'search',
             select: 's',
-            errorSearch: ''
+            errorSearch: '',
+            firstUrlElement: '',
         }
+
+        console.log('propriété', props);
     }
 
+    //?
     getData = async (prefixUrl) => {
         try {
             const response = await axios(`https://themealdb.com/api/json/v1/1/${prefixUrl}`);
@@ -50,6 +55,7 @@ export default class Index extends Component {
 
         try {
             await this.checkFilter();
+            //retreiving API data's
             const data = await this.getData(`${this.state.filterSearch}.php?${this.state.select}=${this.state.input}`);
 
             if (data !== null || data !== undefined || this.state.input === '') {
@@ -88,22 +94,50 @@ export default class Index extends Component {
         })
     }
 
-    render() {
+    
+    // changeUrl = async () => {
 
-
+    //     return this.props.history.replace(await this.state.firstUrlElement +"/"+ await this.state.filterSearch + "/" + await  this.state.select +"/" + await this.state.input)
         
+    // }
 
+
+    changeName = async () => {
+
+        await this.state.select
+
+        if(this.state.select == 's'){
+
+            this.setState({
+                firstUrlElement: "Nom"
+            })                
+        }
+        else if(this.state.select == 'c'){
+
+            this.setState({
+                firstUrlElement: "Category"
+            })                
+        }
+        else if(this.state.select == 'i'){
+
+            this.setState({
+                firstUrlElement: "Ingredient"
+            })                
+        }
+        else if(this.state.select == 'a'){
+
+            this.setState({
+                firstUrlElement: "Origine"
+            })                
+        }
+    }
+  
+
+    render() { 
+        
         return (
             <header>
-                <div className="menu-logo">
-                    <div className="logo">
-                        food
-                    </div>
-                    <ul className="menu">
-                        <li><a href="/">accueil</a></li>
-                        <li><a href="/favorite">favoris</a></li>
-                    </ul>
-                </div>
+              
                 <div className="searchBox">
                     <input type="text" name="input" onChange={this.handleChange} value={this.state.input} />
                     <select name="select" onChange={this.handleChange}>
@@ -112,23 +146,19 @@ export default class Index extends Component {
                         <option value="i">Ingrédient</option>
                         <option value="a">Origine</option>
                     </select>
-                    <button onClick={this.handleClick}>GO</button>
-                </div>
-                <nav>
-                    <ul>
-                        <li>Liste Des Catégories Ici</li>
-                    </ul>
 
-                    {/* Test */}
-                    {
-                        this.state.data.map((el, i) => {
-                            return (
-                                <div key={i}>{el.strMeal}</div>
-                            )
-                        })
-                    }
-                </nav>
+                    
+                    <button onClick={this.changeName}>     
+                        <a href={this.state.firstUrlElement +"/"+ this.state.filterSearch + "/" + this.state.select +"/" + this.state.input} onClick={this.handleClick}>      
+                       Go
+                       </a> 
+                    </button>
+
+                </div>
+              
             </header>
         )
     }
 }
+
+export default withRouter(Index);

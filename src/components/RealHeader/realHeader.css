@@ -1,0 +1,46 @@
+
+
+  .realHeader  {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+     border: 1px solid rgb(77, 150, 70); 
+    height: 43px;
+ 
+  }
+  .chef img{
+    height: 40px;
+    margin-top: 0px;
+    margin-left: -445px;
+  }
+   .menu ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      /* border: 1px solid #B198FC; */
+  }
+  .navEl{
+
+    display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: monospace;
+    color: #B198FC
+ 
+  }
+
+  .navEl li {
+    margin-left: 10px;
+    font-size: 12px;
+    margin-right: 17px;
+  }
+  .logo h4{
+     border: 1px solid rgb(67, 85, 82); 
+    margin-right: 444px;
+    font-size: 29px;
+    margin-top: 4px;
+    font-family: monospace;
+    color: #B198FC
+  }
+
