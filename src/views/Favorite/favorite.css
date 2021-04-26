@@ -1,3 +1,10 @@
+section {
+
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 .favorite {
   display: flex;
   flex-direction: row;
@@ -25,7 +32,11 @@ padding: 0 0 0 1rem;
 figure h2 a {
 color: #555;
 }
-figure button {
+figure div {
+display: flex;
+justify-content: center;
+}
+figure div button {
     text-transform: capitalize;
     color: #fff;
     font-weight: bold;
@@ -35,8 +46,9 @@ figure button {
     padding: .5rem 1rem;
     cursor: pointer;
     text-align: center;
+    font-size: .7rem;
 }
-figure button:hover {
+figure div button:hover {
     background-color: #ff4800;
 }
 
