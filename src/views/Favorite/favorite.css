@@ -1,0 +1,53 @@
+.favorite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+figure {
+  background-color: #fff;
+  width: 25%;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+figure a {
+}
+figure a img {
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+    transition: all .3s ease-in-out;
+}
+figure a img:hover {
+    transform: scale(1.05);
+}
+figure h2 {
+padding: 0 0 0 1rem;
+}
+figure h2 a {
+color: #555;
+}
+figure button {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    background-color: #f10;
+    border: none;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+figure button:hover {
+    background-color: #ff4800;
+}
+
+.not-favoris {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+.not-favoris p {
+font-size: 1.2rem;
+text-transform: capitalize;
+}
