@@ -9,12 +9,14 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 figure {
   background-color: #fff;
-  width: 25%;
+  width: 29%;
   border-radius: .5rem;
   overflow: hidden;
+  margin: 2%;
 }
 figure a {
 }
