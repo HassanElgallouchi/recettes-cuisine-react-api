@@ -19,6 +19,10 @@ class Index extends Component {
             select: 's',
             errorSearch: '',
             firstUrlElement: '',
+            style : {
+                fontFamily: 'monospace',
+                fontSize: '13px', 
+            }
         }
 
         console.log('propriété', props);
@@ -140,15 +144,15 @@ class Index extends Component {
               
                 <div className="searchBox">
                     <input type="text" name="input" onChange={this.handleChange} value={this.state.input} />
-                    <select name="select" onChange={this.handleChange}>
-                        <option value="s">Nom</option>
+                    <select name="select" onChange={this.handleChange}style={this.state.style} >
+                        <option value="s" >Nom</option>
                         <option value="c">Catégories</option>
                         <option value="i">Ingrédient</option>
                         <option value="a">Origine</option>
                     </select>
 
                     
-                    <button onClick={this.changeName}>     
+                    <button onClick={this.changeName} style={this.state.style}>     
                         <a href={this.state.firstUrlElement +"/"+ this.state.filterSearch + "/" + this.state.select +"/" + this.state.input} onClick={this.handleClick}>      
                        Go
                        </a> 

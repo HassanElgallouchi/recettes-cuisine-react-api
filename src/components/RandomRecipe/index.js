@@ -42,17 +42,28 @@ export default class Index extends Component {
     render() {
         return (
             <div>
-                {this.state.data.map(e => {
-                    return (
-                    <div className='randomRecipe'>
-                        <h1 key={e.strMeal}>{e.strMeal}</h1>
-                        <img src={e.strMealThumb} alt={e.strMeal}/>
-                        <p>{e.strInstructions}</p>
-                        <a href={'/recette/'+e.idMeal}>Detail</a> 
+            {this.state.data.map(e => {
+                return (
+
+                    <div className='randomRecipe flex'>
+
+                        
+                        <div className='flex'>
+                            <img src={e.strMealThumb} alt={e.strMeal} />
+                        </div>
+                        <div className= 'leftContent'>
+                        
+                        <div className='instructionDetail flex collumn'>
+                            <h1 key={e.strMeal}>{e.strMeal}</h1>
+                            <p className='glassBox'>{e.strInstructions}</p>
+                            <a href={'/recette/' + e.idMeal}>Detail</a>
+                        </div>
+                        
+                        </div>
                     </div>
-                    )
-                })} 
-            </div>
+                )
+            })}
+        </div>
         )
     }
 }

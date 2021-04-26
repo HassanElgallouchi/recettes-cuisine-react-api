@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './Footer.css'
 import instagram from '../../assets/img/instagram.png';
-import facebook from '../../assets/img/facebook.png'; 
-import twitter from '../../assets/img/twitter.png';
+import facebook from '../../assets/img/facebook_.png'; 
 import youtube from '../../assets/img/youtube-logotype.png';
 
 
@@ -16,24 +15,22 @@ export default class Index extends Component {
         this.state = {
 
             style : {
-                height: '100px',
-                border: '1px solid #E117FB',
+                height: '190px',
                 display: 'flex',
                 justifyContent: 'space-between',
-                backgroundColor: '#FCFE9F',
                 marginTop: '128px',
-
-            },     
-            imgStyle : {
-                border: '1px solid red',
-            },  
+            },      
             logoHeight :{
                 height: '31px',
             },
             space: {
                 display: 'flex',
-                justifyContent: 'space-around',
+                justifyContent: 'center',
+                alignItems: 'space-around',
                 paddingLeft: '30px',
+                margin:'20px',
+                width:'60%',
+                height:'31px',
             }
             
         }
@@ -41,21 +38,29 @@ export default class Index extends Component {
     }
     render() {
         return (
-            <div style={this.state.style}>
+
+            <div className='footer'style={this.state.style}>
                 
                 <div style={this.state.imgStyle}>  
 
-                <div style={this.state.space}> 
-                  <p>Foodies</p>
+                    <div style={this.state.space}> 
+                    <h3>Foodies</h3>
+                    </div>
+
+                <div className='boxSocialMedia' style={this.state.space}>
+                  <a href='#'><img src={instagram} style={this.state.logoHeight} alt="logo d'instagram"/></a>
+                  <a href='#'><img src={facebook} style={this.state.logoHeight} alt="logo de facebook"/></a>
+                  <a href='#'><img src={youtube} style={this.state.logoHeight} alt="logo de youtube"/></a>
+
+                 
                 </div>
 
-                <div style={this.state.space}>
-                  <a href='#'><img src={instagram} style={this.state.logoHeight} alt="logo d'instagram"/></a>
-                  <a href='#'><img src={facebook} alt="logo de facebook"/></a>
-                  <a href='#'><img src={twitter} alt="logo de twitter"/></a>
-                  <a href='#'><img src={youtube} style={this.state.logoHeight} alt="logo de youtube"/></a>
-                 </div> 
+                
+                
+                
                 </div>
+
+                <p>By Rebecca KANU, Hassan EL GHALLOUCHI and Nawal MAIZATE</p>
 
                 <p>
                     Tous droits réservés Foodies.org 2020-2021
@@ -65,4 +70,5 @@ export default class Index extends Component {
             </div>
         )
     }
+
 }

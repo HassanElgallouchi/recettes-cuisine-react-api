@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
+import './FoodCategorie.css'
 
 export default class FoodCategorie extends Component {
     constructor(props){
@@ -25,25 +26,31 @@ export default class FoodCategorie extends Component {
     render() {
         return (
             <div>
-                
+            <div className='titleCateRcp'>
               <h1>Recipes</h1>
-
+            </div>
+            <div class='recipeParent'>
               {this.state.data.map((e, index) => {
                   return (
-                    <div key={index}>
+                    
+ 
+                     <div key={index} className='recip1'>
 
-                      <a href={'/recette/' + e.idMeal}><h1>{e.strMeal}</h1></a>
-                      <a href={'/recette/' + e.idMeal}><img src={e.strMealThumb}/></a>
+                       <a href={'/recette/' + e.idMeal}>
+                         <h1>{e.strMeal}</h1>
+                       </a>
 
-                    <button> 
-                        <a href={'/recette/' + e.idMeal}>
-                            Recipe details
-                        </a> 
-                    </button>
+                       <div className='recipeCImg'>
+                         <a href={'/recette/' + e.idMeal}><img src={e.strMealThumb} className='imgC'/></a>
+                       </div>
 
-                    </div>
+                     </div>
+                 
+
+                   
                   )
               })}
+            </div>
 
 
                 
