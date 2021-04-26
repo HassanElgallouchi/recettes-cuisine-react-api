@@ -10,7 +10,6 @@ import RecipeByName from './views/Categories/RecipeByName';
 import RecipeByCategorie from './views/Categories/RecipeByCategorie'; 
 import RecipeDetails from './views/Recipe/index'
 
-
 import {  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
