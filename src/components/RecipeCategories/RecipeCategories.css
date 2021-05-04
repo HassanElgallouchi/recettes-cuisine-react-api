@@ -1,7 +1,8 @@
 .flexCategorie{
     display: flex;
     justify-content: space-around;
-    border: 2px solid #3595a1;
+    /* border: 2px solid #3595a1; */
+    margin-top: 105px;
 }
 
 .cat{
@@ -21,7 +22,8 @@
        left: 30%;
        top: 20%;
        opacity: 0.9; 
-       transition: 0.2s
+       transition: 0.2s;
+    background-color: white;
 }
 .cat2{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -33,24 +35,15 @@
        left: 30%;
        top: 20%;
        opacity: 0.9; 
-       transition: 0.3s
+       transition: 0.3s;
+    background-color: white;
 }
 
-
- .cat1:hover {
-    height: 50vh;
-    width: 33%;
-    opacity: 1; 
-} 
-.cat2:hover {
-    height: 50vh;
-    width: 33%;
-    opacity: 1; 
-} 
 .cat1 p{
-    color: #4FFADC;
+    color: #B198FC;
     font-family: monospace;
     margin-top: -30px;
+    font-size: 14px;
 }
 
 .cat1 span{
@@ -61,29 +54,30 @@
     font-weight: bold;
 } 
 .cat2 p{
-    color: #4FFADC;
+    color: #B198FC;
     font-family: monospace;
     margin-top: -30px;
+    font-size: 14px;
 }
 
 
 .cat1 h4{
     /* border: 1px solid  #A8DADC; */
-    font-size: 20px;
+    font-size: 24px;
     height: 36%;
     width: 214px;
-    color:  #B198FC;
-    font-family:monospace;
+    color:  black;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
 .cat2 h4{
     /* border: 1px solid  #A8DADC; */
-    font-size: 20px;
+    font-size: 24px;
     height: 36%;
     width: 248px;
-    color:  #B198FC;
-    font-family:monospace;
+    color:  black;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 

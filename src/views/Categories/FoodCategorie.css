@@ -1,0 +1,60 @@
+
+.recipeParent{
+
+    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+
+}
+.recipeCImg img{
+    height: auto;
+    width: 119%;
+}
+.recipeCImg{
+    width: 42%;
+    margin: 0 auto;
+}
+
+.CatButton button{
+    background-color: #b198fc;
+}
+.imgC{
+    height: 273px;
+    margin-bottom: 20px;
+} 
+.recip1{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+height: 378px;
+width: 46%;
+left: 30%;
+top: 20%;
+opacity: 0.9;
+transition: 0.2s;
+margin-bottom: 18px;
+margin-right: 7px;
+background-color: white;
+
+}
+.recip1:hover{
+    height: 380px;
+    width: 48%;
+    opacity: 1; 
+} 
+.recip1{
+    font-size: 11px;
+}
+.recip1 h1{
+    font-size: 19px;
+    text-align: center;
+}
+.titleCateRcp>h1{
+    font-family: monospace;
+    font-weight: normal;
+    padding-left: 24px;
+    
+    
+}
