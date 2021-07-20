@@ -17,8 +17,6 @@ export default class FoodCategorie extends Component {
       "https://www.themealdb.com/api/json/v1/1/filter.php?c=" + categorie
     );
 
-    console.log("YO!!!", categorie);
-
     this.setState({
       data: response.data.meals,
     });
