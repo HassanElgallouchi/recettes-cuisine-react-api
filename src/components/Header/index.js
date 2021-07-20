@@ -25,7 +25,7 @@ export default class index extends Component {
                 <a href="/favorite">Favoris</a>
               </li>
             </div>
-          </ul>
+          </ul>  
         </div>
       </div>
     );
