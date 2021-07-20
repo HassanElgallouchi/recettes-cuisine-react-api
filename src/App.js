@@ -2,7 +2,7 @@ import "./App.css";
 import Favorite from "./views/Favorite/index";
 import Homepage from "./views/Homepage/";
 import AreaCategorie from "./views/Categories/AreaCategorie";
-import RealHeader from "./components/RealHeader/index";
+import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import FoodCategorie from "./views/Categories/FoodCategorie";
 import RecipeByName from "./views/Categories/RecipeByName";
@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <RealHeader />
+      <Header />
 
       <Switch>
         <Route exact path="/" component={Homepage} />
