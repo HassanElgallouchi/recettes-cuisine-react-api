@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 🚀Hand of-hope
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./src/assets/images/Hand-of-hope.png" alt="hanf of hope template"/>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Table of Contents
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [References](#references)
+- [License](#license)
+- [Author Info](#author-info)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 📖 Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This a react project (client side part) with call of an external api.
 
-### `npm run build`
+#### 🔬 Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div>
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css logo"/>
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react logo">
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript logo"/>
+    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="sass logo"/>
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How To Use
 
-### `npm run eject`
+#### ⚙️ Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1.  Installation of Nodejs
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+            sudo apt install nodejs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2.  Initialisation of a package.json
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+            npm init
 
-## Learn More
+3.  Installation of modules
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+            React:
+            npx create-react-app my-app
+            cd my-app
+            npm start
+          
+            npm install dotenv
+            npm install axios
+            npm install sass
+            npm install jsonwebtoken
+            npm install @stripe/react-stripe-js @stripe/stripe-js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+         
 
-### Code Splitting
+#### API Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```html
+<p>dummy code</p>
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## References
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributors
 
-### Advanced Configuration
+<!-- - <spam>Kanu Rebecca</spam>[<img alt="github link" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>][githubrebecca] -->
+<!-- - <spam>Jérôme Eliezer</spam>[<img alt="github link" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>][githubnawal]
+- <spam>Nawal Maizate</spam>[<img alt="github link" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>][githubhassan] -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br />
+<br />
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[githubrebecca]: https://github.com/RebeccaRamalho
+[githubnawal]: https://github.com/nawalpro
+[githubhassan]: https://github.com/HassanElgallouchi
