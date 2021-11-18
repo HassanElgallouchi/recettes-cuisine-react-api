@@ -4,7 +4,6 @@
 
 ### Table of Contents
 
-
 - [Description](#description)
 - [How To Use](#how-to-use)
 - [References](#references)
@@ -46,14 +45,11 @@ This a react project (client side part) with call of an external api.
             npx create-react-app my-app
             cd my-app
             npm start
-          
-            npm install dotenv
+
             npm install axios
             npm install sass
             npm install jsonwebtoken
             npm install @stripe/react-stripe-js @stripe/stripe-js
-
-         
 
 #### API Reference
 
