@@ -14,7 +14,7 @@
 
 ## 📖 Description
 
-This a react project (client side part) with call of an external api.
+This a react project with call of an external api.
 
 #### 🔬 Technologies
 
