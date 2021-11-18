@@ -1,5 +1,5 @@
 # 🚀Foodies
-
+<img src="./src/assets/img/FOODIES.png" alt="site image"/>
 ---
 
 ### Table of Contents
