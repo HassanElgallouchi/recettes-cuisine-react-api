@@ -13,9 +13,6 @@ export default class index extends Component {
 
         }
     };
-
-    //DEBUT CODE ABD
-
     addFavoris = () => {
         let recipeToFavoris = {
             idMeal: this.state.recipeData.idMeal,
@@ -45,14 +42,10 @@ export default class index extends Component {
             localStorage.setItem("favoris", JSON.stringify(favorisArray1));
         }
     };
-
-    //FIN CODE ABD
-
     getRecipeDetails = async () => {
 
         const idUrl = this.props.match.params.idMeal;
 
-        console.log('iiiii', idUrl);
         try {
             const response = await axios.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + idUrl);
 
